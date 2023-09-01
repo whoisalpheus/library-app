@@ -1,0 +1,43 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: system-ui;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(71, 92, 85);
+    gap: 20px;
+}
+
+.header {
+    background-color: rgb(73, 45, 45);
+    color: rgb(114, 107, 96);
+    width: 100vw;
+    padding: 10px;
+}
+
+/* .add-book {
+
+} */
+
+.add-book button {
+    width: 25vw;
+    height: 15vh;
+    border-radius: 25px;
+    font-size: 25px;
+    background-color: rgb(114, 107, 96);
+    color: rgb(219, 206, 186);
+}
+
+.books {
+
+}
+
+.book-list {
+    border: 2px solid black;
+}
