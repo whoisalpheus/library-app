@@ -35,9 +35,32 @@ body {
 }
 
 .books {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
+.add-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: rgb(134, 95, 95);
 }
 
 .book-list {
     border: 2px solid black;
+}
+
+dialog::backdrop {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: aquamarine;
+    opacity: 0.5;
+    border-radius: 25px;
+    width: 75vw;
+    height: 50vh;
 }

@@ -72,13 +72,18 @@ addBtn.addEventListener('click', () => {
     addForm.appendChild(submitBtn);
 
 // Add books to table when submitBtn is clicked
-submitBtn.addEventListener('click', function(e) {
+inputText.addEventListener('change', (e) => {
+    submitBtn.value = inputText.value;
+});
+
     // if clicked, send value to table...
-    tr.textContent = inputText.textContent;
     // titleInput.value, authorInput.value, pagesInput.value, readInput.value
     // each into <td> element inside a <tr>, inside <table>
     // <table class='book-list'>
-});
+
+submitBtn.addEventListener('click', (event) => {
+    event.preventDefault();
+})
 
 // const book1 = new Book('Grapes of Wrath', 'John Steinbeck', 314)
 // const book2 = new Book('The Order of Time', 'Carlo Rovelli', 245)
