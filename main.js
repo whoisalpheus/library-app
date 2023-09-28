@@ -6,16 +6,6 @@ const bookTable = document.querySelector('.book-list');
 const inputText = document.querySelectorAll('.input-text');
 const modalForm = document.querySelector('.modal');
 
-// Using class
-class Book {
-    constructor(title, author, pages, read) {
-        this.title = title;
-        this.author = author;
-        this.pages = pages;
-        this.read = read;
-    }
-}
-
 function Book(title, author, pages, read) {
     this.title = title
     this.author = author
@@ -24,18 +14,7 @@ function Book(title, author, pages, read) {
     this.info = function() {
         return (title + author + ', ' + pages + read);
     }
-
-    showModal() {
-        // ...
-        addBtn.addEventListener('click', () => {
-            modalForm.showModal();
-        })
-    }
-
-    addBookToLibrary() {
-        // ...
-    }
-}
+}    
 
 // Click Add Button
 // EventListener to add <form> when +addbtn clicked
@@ -118,4 +97,29 @@ submitBtn.addEventListener('click', (event) => {
 
 function addBookToLibrary() {
 
+}
+
+
+
+
+// Using class
+class Book {
+    constructor(title, author, pages, read) {
+        this.title = title;
+        this.author = author;
+        this.pages = pages;
+        this.isRead = false;
+    }
+}
+
+class Library {
+    constructor() {
+        this.books = [];
+    }
+
+    // Methods:
+    // addBook
+    addBook() {
+        return `${this.title} + ${this.author} + ${this.pages} + ${this.isRead}`;
+    }
 }
